@@ -3,52 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> PAULO CARVALHO™ </title>
+    <title>PAULO CARVALHO™</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    <!-- Importando a fonte Poppins do Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* Garantir que o box-sizing seja aplicado a todos os elementos */
         * {
             box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
-        /* Estilo geral */
         body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-image: url('img/plano\ de\ fundo.png'); /* URL da imagem */
-    background-color: black; /* Cor de fundo para garantir um fundo escuro */
-    background-size: cover; /* Ajusta a imagem para cobrir a tela */
-    background-repeat: no-repeat; /* Evita repetição da imagem */
-    background-attachment: fixed; /* Mantém a imagem fixa ao rolar */
-    color: white; /* Ajusta a cor do texto para melhor contraste */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow-x: hidden;
-    width: 100%;
-}
+            font-family: 'Poppins', sans-serif;
+            color: black;
+            min-height: 100vh;
+            position: relative;
+            overflow-x: hidden;
+        }
 
-        /* Cabeçalho */
+        /* Criando a sobreposição transparente no fundo */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('img/plano de fundo.png') no-repeat center center fixed;
+            background-size: cover;
+            opacity: 0.4; /* Define a opacidade da imagem para 40% */
+            z-index: -1; /* Garante que a imagem fique atrás do conteúdo */
+        }
+
         .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
+            padding: 15px 20px;
             background-color: black;
-            color: white;
         }
 
         .header h1 {
-            margin: 0;
-            font-family: 'Poppins', sans-serif;
-            font-weight: 600;
-            font-size: 24px;
             display: flex;
             align-items: center;
+            font-size: 24px;
+            font-weight: 600;
+            color: white; /* Definindo o título PAULO CARVALHO em branco */
         }
 
         .header h1 .icon {
@@ -56,34 +57,62 @@
         }
 
         .header h1 .youtube-icon {
-            margin-left: 10px;
+            margin-left: 10px; /* Espaço adicional entre o nome e o ícone do YouTube */
         }
 
         .content {
-            flex: 1;
-            padding: 20px;
             text-align: center;
+            padding: 20px;
         }
 
         .social-media-image img {
-            width: 1800px;
-            max-width: 100%;
-            height: 470px;
-            border-radius: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1800px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
         }
 
-        /* Rodapé */
+        .about-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            margin-top: 20px;
+            border-radius: 15px;
+            text-align: justify;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .about-section h2 {
+            text-align: center;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-section p {
+            font-size: 16px;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
         .footer {
             background-color: black;
             color: white;
             text-align: center;
             padding: 15px;
-            width: 100%;
+            margin-top: 20px;
+        }
+
+        #clock {
+            font-size: 14px;
+            margin-top: 10px;
         }
     </style>
 </head>
 <body>
+
     <div class="header">
         <h1>
             <i class="fas fa-gamepad icon"></i> 
@@ -96,11 +125,30 @@
         <div class="social-media-image">
             <img src="https://www.sp.senac.br/documents/portlet_file_entry/51828463/profissional-de-ti-ia-internet-of-things.jpeg/1aaf6246-4367-9799-28a2-12330d8c5709?imagePreview=1">
         </div>
+
+        <div class="about-section">
+            <h2>Sobre Paulo</h2>
+            <p>
+                Desde 2006, Paulo tem se dedicado ao universo da tecnologia, construindo uma sólida carreira como técnico em informática. Sempre em busca das melhores soluções, ele trabalha com suporte e manutenção de computadores, garantindo eficiência e qualidade no atendimento.
+            </p>
+            <p>
+                Sua trajetória profissional abrange diversas áreas. Atuou como tutor de aulas remotas, ajudando alunos a se adaptarem ao ambiente digital, além de ter trabalhado como projecionista de cinema, contribuindo para a magia das telonas. Também exerceu a função de técnico em manutenção de equipamentos de internet, auxiliando na conectividade de empresas e residências.
+            </p>
+            <p>
+                Atualmente, Paulo presta suporte técnico remoto, oferecendo soluções rápidas e práticas para clientes de qualquer localidade. Além disso, realiza consultorias especializadas para empresas e usuários que desejam otimizar seus sistemas e equipamentos.
+            </p>
+            <p>
+                Um de seus principais serviços é a montagem de computadores sob medida, garantindo que cada máquina seja projetada conforme a necessidade do cliente, seja para trabalho, estudos ou games. Atendendo tanto sua cidade quanto regiões próximas, ele oferece um serviço personalizado e de alta qualidade.
+            </p>
+            <p>
+                Apaixonado por tecnologia, nas horas vagas Paulo se dedica ao mundo dos videogames e inovações digitais, sempre acompanhando as últimas tendências do setor.
+            </p>
+        </div>
     </div>
 
     <footer class="footer">
         &copy; 2025 Paulo Carvalho - Todos os direitos reservados.
-        <div class="clock-bar" id="clock"></div>
+        <div id="clock"></div>
     </footer>
 
     <script>
@@ -123,5 +171,6 @@
         setInterval(updateClock, 1000);
         updateClock();
     </script>
+
 </body>
 </html>
