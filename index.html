@@ -22,7 +22,6 @@
             overflow-x: hidden;
         }
 
-        /* Criando a sobreposição transparente no fundo */
         body::before {
             content: "";
             position: fixed;
@@ -32,8 +31,8 @@
             height: 100%;
             background: url('img/plano de fundo.png') no-repeat center center fixed;
             background-size: cover;
-            opacity: 0.4; /* Define a opacidade da imagem para 40% */
-            z-index: -1; /* Garante que a imagem fique atrás do conteúdo */
+            opacity: 0.4;
+            z-index: -1;
         }
 
         .header {
@@ -49,7 +48,7 @@
             align-items: center;
             font-size: 24px;
             font-weight: 600;
-            color: white; /* Definindo o título PAULO CARVALHO em branco */
+            color: white;
         }
 
         .header h1 .icon {
@@ -57,7 +56,7 @@
         }
 
         .header h1 .youtube-icon {
-            margin-left: 10px; /* Espaço adicional entre o nome e o ícone do YouTube */
+            margin-left: 10px;
         }
 
         .content {
@@ -67,7 +66,7 @@
 
         .social-media-image img {
             width: 100%;
-            max-width: 1800px;
+            max-width: 900px;
             height: auto;
             border-radius: 15px;
             box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
@@ -78,10 +77,25 @@
             padding: 30px;
             margin-top: 20px;
             border-radius: 15px;
-            text-align: left; /* Alinha o texto à esquerda */
+            text-align: left;
             max-width: 900px;
             margin-left: auto;
             margin-right: auto;
+            height: 400px;
+            overflow-y: auto; /* Barra de rolagem adicionada */
+        }
+
+        .about-section::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .about-section::-webkit-scrollbar-thumb {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 10px;
+        }
+
+        .about-section::-webkit-scrollbar-track {
+            background: transparent;
         }
 
         .about-section h2 {
@@ -94,8 +108,8 @@
             font-size: 16px;
             line-height: 1.8;
             margin-bottom: 15px;
-            text-align: left; /* Alinha o texto à esquerda */
-            text-indent: 20px; /* Adiciona o recuo na primeira linha */
+            text-align: left;
+            text-indent: 20px;
         }
 
         .footer {
