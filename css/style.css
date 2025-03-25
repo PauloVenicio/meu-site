@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('img/plano de fundo.png') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: -1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: black;
+}
+
+.header h1 {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+}
+
+.header h1 .icon {
+    margin-right: 10px;
+}
+
+.header h1 .youtube-icon {
+    margin-left: 10px;
+}
+
+.content {
+    text-align: center;
+    padding: 20px;
+}
+
+.social-media-image img {
+    width: 100%;
+    max-width: 1800px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.about-section {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 15px;
+    text-align: justify;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.btn-leia-mais {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.more-text {
+    display: none;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+#clock {
+    font-size: 14px;
+    margin-top: 10px;
+}
